@@ -1,0 +1,9 @@
+name: ChatBot_tf10
+dependencies:
+  - python=3.5
+  - numpy=1.13.3
+  - spyder=3.2.5
+  - pip:
+    - tensorflow==1.0.0
+    - gevent-websocket==0.10.1
+    - flask==0.12.2
