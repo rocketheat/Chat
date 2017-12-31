@@ -8,4 +8,4 @@ WSGI Server to chat with chatbot
 4. In chatbot_load.py file (in part 5 in the bottom) change the ip_address variable to your local ip address (ex. '192.168.1.1').  
 5. Make sure port 5000 is open on your computer. In linux using a code like sudo ufw allow 5000.  
 6. Run chatbot_load.py file from terminal with python chatbot_load.py  
-7. you can access your chatbot with the ip address noted above :5000 (ex. 192.168.1.1:5000) either on your local computer or a remote computer connected to your local network. If you didn't update this field you can access the server locally on localhost:5000.   
+7. you can access your chatbot with the ip address noted above :5000 (ex. 192.168.1.1:5000) either on your local computer or a remote computer connected to your local network. If you didn't update the ip_address variable, you can access the server locally on localhost:5000.   
