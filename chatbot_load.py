@@ -327,6 +327,9 @@ def convert_string2int(question, word2int):
     question = clean_text(question)
     return [word2int.get(word, word2int['<OUT>']) for word in question.split()]
 
+
+########## PART 5 - Serving THE SEQ2SEQ MODEL ##########
+
 from geventwebsocket.handler import WebSocketHandler
 from gevent.pywsgi import WSGIServer
 from flask import Flask, request, render_template
@@ -366,7 +369,8 @@ def api():
             ws.send('ChatBot: ' + answer)
 
     return
+ip_address = '' # replace it with your your computer ip address and place it in ''
 
 if __name__ == '__main__':
-    http_server = WSGIServer(('10.0.10.104',5000), app, handler_class=WebSocketHandler)
+    http_server = WSGIServer((ip_address, 5000), app, handler_class=WebSocketHandler)
     http_server.serve_forever()
