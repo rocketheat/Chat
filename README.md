@@ -2,7 +2,7 @@
 WSGI Server to chat with chatbot
 
 ### To implement:
-1. Run the code using the chatbot_tf10 enviroment with: conda create -f chatbot_cpu_tf10.yml   
+1. Run the code using the chatbot_tf10 enviroment with: conda env create -f chatbot_cpu_tf10.yml   
 2. source activate chatbot_cpu_tf10
 3. Add your saved model (the ckpt files) to the chatbot folder.  
 4. In chatbot_load.py file (in part 5 in the bottom) change the ip_address variable to your local ip address (ex. '192.168.1.1').  
